@@ -1,0 +1,299 @@
+#App-header{
+  margin-top: 10px;
+  margin-left: 125px;
+  color: #2d3142;
+}
+
+#left-side, #right-side{
+  display: inline-block
+}
+ 
+ #left-side{
+   width: 50%;
+   border: 1px solid #bfc0c0;
+   margin-left: 120px;
+ }
+
+ .cashe-data{
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: -20px;
+}
+
+#code-input{
+  width: 88%;
+  height: 30px;
+  border: 1px solid #4f5d75;
+}
+
+.product-code{
+  width: 38%;
+  margin-right: -40px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.product-code, .product-count{
+  display: inline-block;
+}
+
+#count-input{
+  width: 15%;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #4f5d75;
+}
+
+.product-count{
+  position: absolute;
+  margin-top: 21px;
+  margin-left: 35%;
+}
+
+#cashe-desk-area{
+  margin-top: -50px;
+}
+
+ #products-grid{
+  height: 450px;
+  overflow: auto;
+  color: #2d3142;
+ }
+
+.tr{
+  border: 1px solid #bfc0c0;
+  height: 35px;
+  color: #2d3142;
+}
+
+
+th:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #bfc0c0;
+  top: -1px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#products-grid::-webkit-scrollbar {
+  background-image: linear-gradient(to top, whitesmoke, white);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2px;
+}
+
+#products-grid::-webkit-scrollbar:vertical {
+  width: .6rem;
+}
+
+#products-grid::-webkit-scrollbar:horizontal {
+  width: .6rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+thead th{
+  position: sticky;
+  top: 0;
+}
+
+.scroll-tbody{
+  overflow: auto;
+}
+ 
+
+#right-side{
+  margin-left: 70px;
+   margin-top: -32px; 
+}
+
+.sum-area{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.money-tabs{
+  width: 105px;
+  height: 87px;
+  color: #2d3142;
+  border: 1px solid #4f5d75;
+}
+
+.money-tabs, .sum-area, .back, .received{
+  font-size: 18px;
+}
+
+
+.sum-area,#back, #received {
+  border: 1px solid #4f5d75;
+  height: 35px;
+  border-radius: 4px;
+  border-color: #bfc0c0;
+  color: #2d3142;
+  background-color:hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.back, .received{
+  width: 150px;
+  display: inline-block;
+}
+
+.received{
+  margin-top: 25px;
+}
+
+ .back{
+   margin-left: 20px;
+   position: absolute;
+   margin-top: auto;
+ }
+
+
+
+ button{
+  height: 40px;
+  border-radius: 4px;
+  border-color: #4f5d75;
+  background-color: #ffffff;
+ }
+
+ .c{
+  width: 50px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.z-report, .print-check{
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  margin-left: 40px;
+}
+
+.print{
+  width: 150px;
+}
+
+.deposit{
+  margin-top: -35px;
+  margin-left: 170px;
+}
+
+#footer{
+  margin-left: 80px;
+}
+
+.popup-box {
+  position: fixed;
+  width: 40%;
+  margin-left: 30%;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.box::-webkit-scrollbar {
+  background-image: linear-gradient(to top, whitesmoke, white);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2px;
+}
+
+.box::-webkit-scrollbar:vertical {
+  width: .6rem;
+}
+
+.box::-webkit-scrollbar:horizontal {
+  width: .6rem;
+}
+
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(32% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+
+@media(min-width: 250px) and (max-width: 576px){
+  #App-header{
+    margin-bottom: 70px;
+  }
+  #right-side{
+    margin-left: 120px;
+  }
+}
+
+@media(max-width: -576px){
+  #App-header{
+    margin-bottom: 70px;
+  }
+  #right-side{
+    margin-left: 120px;
+  }
+}
+
+@media(min-width: 576px) and (max-width: 768px){
+  #App-header{
+    margin-bottom: 70px;
+  }
+  #right-side{
+    margin-left: 120px;
+  }
+}
+
+@media(min-width: 768px)and (max-width: 992px){
+  #App-header{
+    margin-bottom: 70px;
+  }
+  #right-side{
+    margin-left: 120px;
+  }
+}
+
+
+@media(min-width: 992px)and (max-width: 1200px){
+  #App-header{
+    margin-bottom: 70px;
+  }
+  #right-side{
+    margin-left: 120px;
+  }
+}
+
