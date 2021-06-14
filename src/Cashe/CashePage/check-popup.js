@@ -3,6 +3,7 @@ import PopUp from "./popup"
 import "./cashe-page.css"
 
 export default function CheckPopup(props){
+    // ?? here you can use destructuring https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
     let data = props.data;
     let date = new Date().toLocaleString("ru");
 
@@ -15,6 +16,7 @@ export default function CheckPopup(props){
   return (
   <div className = "print-check">
       {
+        // ???
           props.checksCount > 0 ? <button className="print" onClick={togglePopup}>Печать чека</button> :
           <button className="print">Печать чека</button>
       }
