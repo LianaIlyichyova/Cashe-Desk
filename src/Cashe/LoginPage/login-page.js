@@ -46,6 +46,7 @@ export default function LoginPage(props){
     }
 
     function handleSelectOfCasheDeskNumber(value) {
+        // please check it out and read about typeof here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
         (typeof(value) === String ? setCasheDeskNumber(value) : setCasheDeskNumber(value.value));
     }
 
@@ -102,6 +103,8 @@ export default function LoginPage(props){
 }
 
 
+// please create a new file and move the component
+//add propTypes
 
 function LoginArea(props){
     return (
@@ -113,7 +116,8 @@ function LoginArea(props){
         </div>
     )
 }
-
+//please create a new file and move the component
+//add propTypes
 function PasswordArea(props){
     return (
         <div>
