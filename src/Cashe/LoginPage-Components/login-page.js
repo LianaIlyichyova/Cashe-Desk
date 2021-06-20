@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import firebase from "../../firebase";
 import { Link } from 'react-router-dom';
-import './login-page.css';
+import '../CSS/login-page.css';
 import SelectCasheDeskNumber from "./cashe-desk-number-select";
 import LoginArea from './login-area';
 import PasswordArea from './password-area';

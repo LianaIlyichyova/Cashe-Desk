@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PopUp from "./popup"
-import "./cashe-page.css"
+import "../CSS/cashe-page.css";
 
 export default function CheckPopup(props){
     let [data, date] = [props.data, new Date().toLocaleString("ru")];

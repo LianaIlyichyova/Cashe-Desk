@@ -3,8 +3,8 @@ import './App.css'
 
 import { BrowserRouter, Route } from 'react-router-dom';
 import {createBrowserHistory} from 'history';
-import LoginPage from "./Cashe/LoginPage/login-page";
-import CasheMainPage from "./Cashe/CashePage/cashe-main-page";
+import LoginPage from "./Cashe/LoginPage-Components/login-page";
+import CasheMainPage from "./Cashe/CashePage-Components/cashe-main-page";
 
 
 const history = createBrowserHistory();

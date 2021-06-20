@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./cashe-page.css";
+import "../CSS/cashe-page.css";
 import ProductCodeInput from "./product-code-input";
 import ReceivedMoneyTabs from "./received-money-tabs";
 import ProductsGrid from "./products-grid";
