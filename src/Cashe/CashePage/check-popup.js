@@ -3,9 +3,8 @@ import PopUp from "./popup"
 import "./cashe-page.css"
 
 export default function CheckPopup(props){
-    let data = props.data;
-    let date = new Date().toLocaleString("ru");
-
+    let [data, date] = [props.data, new Date().toLocaleString("ru")];
+    
     const [isOpen, setIsOpen] = useState(false);
  
   function togglePopup(){

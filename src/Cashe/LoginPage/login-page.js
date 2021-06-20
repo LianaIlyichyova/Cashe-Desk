@@ -3,6 +3,8 @@ import firebase from "../../firebase";
 import { Link } from 'react-router-dom';
 import './login-page.css';
 import SelectCasheDeskNumber from "./cashe-desk-number-select";
+import LoginArea from './login-area';
+import PasswordArea from './password-area';
 
 
 export default function LoginPage(props){
@@ -46,7 +48,7 @@ export default function LoginPage(props){
     }
 
     function handleSelectOfCasheDeskNumber(value) {
-        (typeof(value) === String ? setCasheDeskNumber(value) : setCasheDeskNumber(value.value));
+        (typeof(value) === "string" ? setCasheDeskNumber(value) : setCasheDeskNumber(value.value));
     }
 
     function handleSubmit(event) {
@@ -102,25 +104,3 @@ export default function LoginPage(props){
 }
 
 
-
-function LoginArea(props){
-    return (
-        <div>
-            <div className = "login-area">
-                <label htmlFor = "login">Логин</label>
-            </div>
-                <input type="text" id = "login" onChange = {props.onChange}/>
-        </div>
-    )
-}
-
-function PasswordArea(props){
-    return (
-        <div>
-            <div className = "login-area">
-                <label htmlFor = "password" >Пароль</label>
-            </div>
-            <input type = "password" id = "password" onChange={props.onChange}/>
-        </div>
-    )
-}
